@@ -89,12 +89,12 @@ print(sequential_cnn.summary())
 sequential_cnn.compile(loss='categorical_crossentropy',
                    optimizer='adam',
                    metrics=['accuracy'])
-#history_cnn = sequential_cnn.fit(X_train, Y_train,
-#                         epochs=10,
-#                         batch_size=32,
-#                         validation_data=(X_test, Y_test))
+history_cnn = sequential_cnn.fit(X_train, Y_train,
+                         epochs=10,
+                         batch_size=32,
+                         validation_data=(X_test, Y_test))
 
-#plt_performance(history_cnn)
+plt_performance(history_cnn)
 # accuracy - 1
 # validation accuracy ~ 0.75
 
